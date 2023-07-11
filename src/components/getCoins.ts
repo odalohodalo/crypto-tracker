@@ -7,7 +7,6 @@ const headers = {
 };
 
 async function getCoins(): Promise<any> {
-  try {
     const response = await axios.get(apiURL, {
       params: {
         referenceCurrencyUuid: 'yhjMzLPhuIDl',
@@ -22,10 +21,7 @@ async function getCoins(): Promise<any> {
     });
     const data = response.data;
     return data;
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
+ 
 }
 
 export default getCoins;
