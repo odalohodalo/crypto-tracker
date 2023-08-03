@@ -5,11 +5,7 @@ import { useQuery, QueryKey } from "@tanstack/react-query";
 const Home = () => {
   const queryKey: QueryKey = ["coinData"];
 
-  const { isLoading, error, data } = useQuery(queryKey, getCoins, {
-    onSuccess: (response) => {
-      console.log(response);
-    },
-  }) as {
+  const { isLoading, error, data } = useQuery(queryKey, getCoins) as {
     isLoading: boolean;
     error: { message: string };
     data: {
