@@ -1,0 +1,12 @@
+.navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.navBarElements {
+  display: flex;
+  gap: 10px;
+}

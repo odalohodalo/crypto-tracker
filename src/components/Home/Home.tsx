@@ -1,5 +1,5 @@
 // import getCoins from "./components/getCoins";
-import getCoins from "./getCoins";
+import getCoins from "../getCoins";
 import { useQuery, QueryKey } from "@tanstack/react-query";
 
 const Home = () => {
